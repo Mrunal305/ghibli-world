@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Yusei Magic", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  padding: 4rem 0;
+  margin: 0;
+  /* color: white; */
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+}
+
+.hero {
+  height: 98vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: ghostwhite;
+  /* background: url("./images/hero-bg3.jpg") center / cover no-repeat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.dummy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1; /* Pushes it behind your text */
+  background-image: url('./images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Blurs only the image */
+  transform: scale(1.1); /* Optional: Slightly scales up to hide white edges caused by blur */
+}
+
+#mako-shin {
+  height: 70vh;
+  position: absolute;
+  bottom: 0;
+}
+
+#movies {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movies-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem
+}
+
+.card {
+  position: relative;
+}
+
+.movie-cover {
+  height: 18rem;
+  width: 28rem;
+  border-radius: 0.6rem;
+  object-fit: cover;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.2rem;
+  margin: 0;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+}
+
+footer p {
+  font-style: italic;
+  margin: 3rem;
+}
