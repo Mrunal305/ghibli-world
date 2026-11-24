@@ -1,17 +1,22 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Yusei Magic", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-style: normal;
 }
 
 h1 {
-  padding: 4rem 0;
+  padding: 4rem 0 1rem;
   margin: 0;
   color: white;
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8);
+  /* text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8); */
   font-size: 5rem;
   letter-spacing: 0.4rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: white;
 }
 
 .hero {
@@ -19,8 +24,8 @@ h1 {
   width: 100%;
   box-sizing: border-box;
   /* background-color: ghostwhite; */
-  background-image: linear-gradient(to bottom, #004DA0, #f3f9ff);;
-  /* background: url("./images/suzume.jpg") center / cover no-repeat; */
+  /* background-image: linear-gradient(to bottom, #004DA0, #f3f9ff); */
+  background: url("./images/m4.jpg") center / cover no-repeat;
   /* background-color: rgba(0, 0, 0, 0.2); */
   display: flex;
   flex-direction: column;
@@ -29,15 +34,15 @@ h1 {
   overflow: hidden;
 }
 
-.dummy::before {
+.proxy::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1; /* Pushes it behind your text */
-  background-image: url('./images/suzume.jpg');
+  background-image: url('./images/m4.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(2px); /* Blurs only the image */
+  filter: blur(0.4px); /* Blurs only the image */
   transform: scale(1.1); /* Optional: Slightly scales up to hide white edges caused by blur */
 }
 
@@ -45,7 +50,7 @@ h1 {
   height: 70vh;
   position: absolute;
   bottom: 0;
-  filter: drop-shadow(10px 6px 8px rgba(0, 35, 71, 0.3));
+  filter: drop-shadow(0px 6px 10px rgba(250, 253, 255, 0.4));
 }
 
 #movies {
