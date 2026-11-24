@@ -21,7 +21,7 @@ h2 {
 
 .hero {
   height: 98vh;
-  width: 100%;
+  min-width: 100%;
   box-sizing: border-box;
   /* background-color: ghostwhite; */
   /* background-image: linear-gradient(to bottom, #004DA0, #f3f9ff); */
@@ -73,7 +73,8 @@ h2 {
 
 .movie-cover {
   height: 18rem;
-  width: 28rem;
+  width: 100%;
+  max-width: 28rem;
   border-radius: 0.6rem;
   object-fit: cover;
 }
