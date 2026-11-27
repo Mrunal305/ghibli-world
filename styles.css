@@ -7,16 +7,21 @@ body {
 
 h1 {
   padding: 4rem 0 1rem;
-  margin: 0;
+  margin: 0 2rem;
   color: white;
   /* text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8); */
-  font-size: 5rem;
-  letter-spacing: 0.4rem;
+  font-size: min(8vw, 5rem);
+  letter-spacing: 0.2rem;
 }
 
 h2 {
   font-size: 1.4rem;
+}
+
+.hero h3 {
+  font-size: clamp(1rem, 2vw, 1.4rem);
   color: white;
+  margin: 0 2rem;
 }
 
 .hero {
@@ -25,11 +30,12 @@ h2 {
   box-sizing: border-box;
   /* background-color: ghostwhite; */
   /* background-image: linear-gradient(to bottom, #004DA0, #f3f9ff); */
-  background: url("./images/m4.jpg") center / cover no-repeat;
+  background: linear-gradient(to bottom, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.8)), url("./images/m4.jpg") center / cover no-repeat;
   /* background-color: rgba(0, 0, 0, 0.2); */
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -47,9 +53,9 @@ h2 {
 }
 
 #mako-shin {
-  height: 70vh;
-  position: absolute;
-  bottom: 0;
+  width: 80%;
+  max-width: 28rem;
+  margin-top: auto;
   filter: drop-shadow(0px 6px 10px rgba(250, 253, 255, 0.4));
 }
 
@@ -71,11 +77,23 @@ h2 {
   position: relative;
 }
 
+.mcard {
+  display: grid;
+  place-items: center;
+}
+
 .movie-cover {
   height: 18rem;
   width: 100%;
   max-width: 28rem;
   border-radius: 0.6rem;
+  object-fit: cover;
+}
+
+.mcover {
+  height: 18rem;
+  width: 12rem;
+  border-radius: 0.2rem;
   object-fit: cover;
 }
 
